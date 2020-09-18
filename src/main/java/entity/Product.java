@@ -1,6 +1,9 @@
 package entity;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
+    private static final long serialVersionUID = 8106166529605963550L;
     private int pid;
     private String pname;
     private int price;

@@ -53,8 +53,8 @@ public class ProductDao {
         return jdbcTemplate.update(sql, product.getPname(), product.getPid());
     }
 
-    public int delectProduct(Product product){
+   /* public int delectProduct(Product product){
         String sql="DELECT from product where pid=?";
         return jdbcTemplate.update(sql,product.getPid());
-    }
+    }*/
 }

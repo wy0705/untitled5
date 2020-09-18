@@ -1,6 +1,9 @@
 package entity;
 
-public class Orderr {
+import java.io.Serializable;
+
+public class Orderr implements Serializable {
+    private static final long serialVersionUID = -240860997860954847L;
     private int oid;
     private String otime;
     private int uid;
