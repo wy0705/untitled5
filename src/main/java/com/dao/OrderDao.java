@@ -61,5 +61,9 @@ public class OrderDao {
         String sql = "UPDATE orderr SET state=? WHERE oid=?";
         return jdbcTemplate.update(sql, orderr.getState(), orderr.getOid());
     }
+    public int deleteOrderbyUid(int uid) {
+        String sql = "EDLETE FROM orderr WHERE uid=?";
+        return jdbcTemplate.update(sql,uid);
+    }
 
 }

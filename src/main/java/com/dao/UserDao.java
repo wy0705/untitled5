@@ -77,5 +77,9 @@ public class UserDao {
         String sql = "UPDATE userr SET uname=? WHERE uid=?";
         return jdbcTemplate.update(sql, user.getUname(), user.getUid());
     }
+    public int deleteUser(int uid) {
+        String sql = "EDLETE FROM userr WHERE uid=?";
+        return jdbcTemplate.update(sql,uid);
+    }
 
 }

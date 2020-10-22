@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.entity.Orderr;
 import com.entity.User;
 import com.service.OrderrServiceImpl;
 import com.service.UserServiceImpl;
@@ -69,5 +70,9 @@ public class UserController {
     /*@RequestMapping(value = "userdelectorder", method = RequestMethod.POST)
     @ResponseBody
     public String userdelectorder()*/
-
+    @RequestMapping(value = "delect_user", method = RequestMethod.GET)
+    @ResponseBody
+    public int deleteUserAnddeleteOreder(int uid){
+        return userService.deleteUserAnddeleteOreder(uid);
+    }
 }
